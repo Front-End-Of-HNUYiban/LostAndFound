@@ -24,25 +24,45 @@ $(function(global){
                 else{
                     if(!container.hasClass("f-warning-hidden")){
                         container.addClass("f-warning-hidden");
-                        setTimeout(function(){
-                            var cover=$(".m-cover");
-                            var popup=$(".m-popup");
-                            var countdown=$(".m-popup").find(".small");
-                            if(!cover.hasClass("m-cover-show")){
-                                cover.addClass("m-cover-show");
-                                popup.addClass("m-popup-show");
-                                var count=5;
-                                var timer=setInterval(function(){
-                                    count--;
-                                    countdown.html(count+"s后<a href='home.html'>返回首页</a>");
-                                    if(count<=0){
-                                        clearInterval(timer);
-                                        form.submit();
-                                        location.href="../html/home.html";
-                                    }
-                                },1000)
+                        $.ajax({
+                            url:"../index.php",
+                            type:"post",
+                            data:{
+                                type:$("[name='type']:checked").val(),
+                                title:$("[name='title']").val(),
+                                name:$("[name='name']").val(),
+                                time:$("[name='time']").val(),
+                                place:$("[name='place']").val(),
+                                things:$("[name='things']").val(),
+                                character:$("[name='character']").val(),
+                                contact:$("[name='contact']").val(),
+                                message:$("[name='message']").val(),
+                                picture:$("[name='picture']").val(),
+                                owner:$("[name='type']:checked").val()=="lost"?"2":"1"
+                            },
+                            success:function(msg){
+                                var cover=$(".m-cover");
+                                var popup=$(".m-popup");
+                                var main=$(".m-popup").find(".big");
+                                var countdown=$(".m-popup").find(".small");
+                                var str=msg=="success"?["信息已提交","首页","../html/home.html"]:["提交失败","当前页",""];
+                                main.html(str[0]);
+                                countdown.html("5s后<a href="+str[2]+">返回"+str[1]+"</a>");
+                                if(!cover.hasClass("m-cover-show")){
+                                    cover.addClass("m-cover-show");
+                                    popup.addClass("m-popup-show");
+                                    var count=5;
+                                    var timer=setInterval(function(){
+                                        count--;
+                                        countdown.html(count+"s后<a href="+str[2]+">返回"+str[1]+"</a>");
+                                        if(count<=0){
+                                            clearInterval(timer);
+                                            location.href=str[2];
+                                        }
+                                    },1000);
+                                }
                             }
-                        },500);
+                        });
                     }
                 }
             });
