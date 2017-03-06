@@ -1,0 +1,35 @@
+$(function(){
+    Module.UploadAndPreviewPicture.unit();
+    Func.giveAWarning($("#news-form"),$("#btn-submit"),$("[type='text']"),[
+        /^\S+$/,
+        /^\S+$/,
+        /^[0-9]{2,4}.[0-9]{1,2}.[0-9]{1,2}$/,
+        /^\S+$/,
+        /^\S*$/,
+        /^(((\w{1,2}[\u4e00-\u9fa5]?)|(\w{3,4})|([\u4e00-\u9fa5]\w{0,2})|([\u4e00-\u9fa5]{2}))(、((\w{1,2}[\u4e00-\u9fa5]?)|(\w{3,4})|([\u4e00-\u9fa5]\w{0,2})|([\u4e00-\u9fa5]{2}))){0,2})?$/,
+        /^([0-9]{11})?$/,
+        /^\S*$/
+    ],[
+        "标题中不能为空或含有空格等空白字符",
+        "物品名称中不能为空或含有空格等空白字符",
+        "时间不能为空且需按照格式：年.月.日",
+        "位置中不能为空或含有空格等空白字符",
+        "内含物中不能有空格等空白字符",
+        "物品特征不超过3个且每个不超过4个非空白字符（两个汉字），特征之间以顿号隔开",
+        "联系方式必须是11位手机号码",
+        "备注中不能有空格等空白字符（回车也是空白字符哦）"
+    ]);
+    $("[name='type']").on("change",function(){
+        var container=$("#popup").find(".big");
+        if($("[name='type']:checked").val()=="lost"){
+            container.html("信息已提交");
+        }
+        else{
+            container.html("人品积分已送达");
+        }
+    });
+    $("#btn-cancel").on("click",function(){
+        location.href="../html/home.html";
+    });
+    Module.BottomShadow.unit();
+});

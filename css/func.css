@@ -1,0 +1,20 @@
+.f-warning{
+    opacity:1;
+    text-align:center;
+    overflow:hidden;
+    -webkit-transition:opacity .5s;
+    -moz-transition:opacity .5s;
+    -o-transition:opacity .5s;
+    transition:opacity .5s;
+}
+.f-warning-hidden{
+    opacity:0;
+}
+.f-warning>p{
+    color:#ff6666;
+    font-size:12px;
+}
+.f-warning>p:nth-child(1){
+    margin-bottom:5px;
+    font-size:14px;
+}

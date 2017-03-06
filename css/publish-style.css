@@ -1,0 +1,71 @@
+.g-main{
+    position:relative;
+    width:100%;
+}
+.g-main>form>div{
+    position:relative;
+    box-sizing:border-box;
+    width:100%;
+    min-height:40px;
+    padding:0 25px;
+    line-height:40px;
+    overflow:hidden;
+}
+.g-main>form>div>.must-mark{
+    position:absolute;
+    left:15px;
+    color:#ff6666;
+}
+.g-main>form>div:not(.picture){
+    border-bottom:#ededed 1px solid;
+}
+.g-main>form>.type>.content>*{
+    display:inline-block;
+    height:40px;
+    vertical-align:top;
+    margin-right:5px;
+    line-height:40px;
+}
+.g-main>form>.type>.content>label{
+    margin-right:20px;
+}
+.g-main>form>div>.content>[type="text"]{
+    width:160px;
+    border:none;
+    outline:none;
+}
+.g-main>form>.picture>.label{
+    vertical-align:top;
+}
+.g-main>form>.picture>.content{
+    margin-top:13px;
+}
+.g-leg{
+    padding-top:20px;
+    height:120px;
+    width:100%;
+}
+.g-foot{
+    position:relative;
+    width:100%;
+    height:60px;
+    text-align:center;
+}
+.g-foot>.btn{
+    position:relative;
+    margin-top:20px;
+    width:30%;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    border:none;
+    border-radius:15px;
+    background-color:#12a2dd;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:600;
+}
+.g-foot>.btn:hover{
+    background-color:#e4e4e4;
+    color:#12a2dd;
+}

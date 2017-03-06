@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="copyright" content="湖南大学易班学生工作站">
+    <meta name="version" content="1.0.0">
+    <title>消息发布</title>
+    <!--All-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--This-->
+    <link rel="stylesheet" type="text/css" href="../css/publish-style.css">
+    <!--Module-->
+    <link rel="stylesheet" type="text/css" href="../css/module.css">
+    <!--Function-->
+    <link rel="stylesheet" type="text/css" href="../css/func.css">
+    <!--Frame-->
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div class="g-main">
+    <form action="" method="post" id="news-form">
+        <div class="type">
+            <span class="must-mark">*</span><span class="label">物品类型：</span><span class="content">
+            <input type="radio" name="type" id="radio-lost" value="lost" checked="checked"><label for="radio-lost">失物</label><input type="radio" name="type" id="radio-found" value="found"><label for="radio-found">招领</label>
+            </span>
+        </div>
+        <div class="title">
+            <span class="must-mark">*</span><span class="label"><label for="text-title">标题：</label></span><span class="content"><input type="text" name="title" id="text-title" placeholder="请输入标题"></span>
+        </div>
+        <div class="name">
+            <span class="must-mark">*</span><span class="label"><label for="text-name">物品名称：</label></span><span class="content"><input type="text" name="name" id="text-name" placeholder="请输入物品名称"></span>
+        </div>
+        <div class="time">
+            <span class="must-mark">*</span><span class="label"><label for="text-time">丢失/拾获时间：</label></span><span class="content"><input type="text" name="time" id="text-time" placeholder="例如：2017.01.31"></span>
+        </div>
+        <div class="place">
+            <span class="must-mark">*</span><span class="label"><label for="text-place">丢失/拾获位置：</label></span><span class="content"><input type="text" name="place" id="text-place" placeholder="例如：复临舍101"></span>
+        </div>
+        <div class="things">
+            <span class="label"><label for="text-things">内含物：</label></span><span class="content"><input type="text" name="things" id="text-things" placeholder="可选填"></span>
+        </div>
+        <div class="character">
+            <span class="label"><label for="text-character">物品特征：</label></span><span class="content"><input type="text" id="text-character" placeholder="例如：黑色、华为、mate"></span>
+        </div>
+        <div class="contact">
+            <span class="label"><label for="text-contact">联系方式：</label></span><span class="content"><input type="text" name="contact" id="text-contact" placeholder="请输入您的手机号码"></span>
+        </div>
+        <div class="message">
+            <span class="label"><label for="text-message">备注：</label></span><span class="content"><input type="text" name="message" id="text-message" placeholder="还有要补充的"></span>
+        </div>
+        <div class="picture">
+            <span class="label">上传照片：</span><span class="content m-upload-picture"><input type="file" accept="image/jpeg" name="picture" id="file-picture"><label for="file-picture"><img
+                class="preview" src="../img/add.png" alt=""></label></span>
+        </div>
+    </form>
+</div>
+<div class="g-leg f-warning">
+    <p>填写时请注意以下规则：</p>
+    <p>*号标志为必填项，其他为选填项</p>
+    <p>所填内容请勿包含空格、回车、制表符等空白字符</p>
+    <p>年月日以英文句号间隔</p>
+    <p>物品特征不多于三个</p>
+    <p>每个特征不多于四个字符（两个汉字）</p>
+    <p>特征与特征之间请用顿号隔开</p>
+    <p>图片限定格式如下：jpg、jpe、jpeg</p>
+</div>
+<div class="g-foot">
+    <span class="btn" id="btn-submit">提交</span>
+    <span class="btn" id="btn-cancel">取消</span>
+    <span class="m-shadow"></span>
+</div>
+<div class="m-cover"></div>
+<div class="m-popup" id="popup">
+    <p class="big">信息已提交</p>
+    <p class="small">5s后<a href="home.html">返回首页</a></p>
+</div>
+<!--Module-->
+<script type="text/javascript" src="../js/module.js"></script>
+<!--Function-->
+<script type="text/javascript" src="../js/func.js"></script>
+<!--This-->
+<script type="text/javascript" src="../js/publish-script.js"></script>
+</body>
+</html>
