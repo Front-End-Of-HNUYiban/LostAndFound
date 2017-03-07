@@ -75,19 +75,19 @@
 }
 .g-main>.item>.g-left{
     position:relative;
-    width:50%;
+    width:150px;
     height:150px;
 }
 .g-main>.item>.g-left>img{
     position:absolute;
-    top:10%;
+    top:7.5%;
     left:10%;
-    width:80%;
-    height:80%;
+    width:85%;
+    height:85%;
 }
 .g-main>.item>.g-right{
     position:relative;
-    width:50%;
+    width:calc(100% - 150px);
     height:150px;
     vertical-align:top;
 }
@@ -107,7 +107,7 @@
 }
 .g-main>.item>.g-right>.content{
     position:relative;
-    top:8%;
+    top:10px;
     margin-left:3px;
     vertical-align:top;
 }
@@ -163,14 +163,15 @@
 }
 .g-foot{
     position:relative;
-    height:50px;
+    top:5px;
+    height:120px;
     width:100%;
     background-color:#f4f4f4;
 }
 .g-foot>.btn{
     position:relative;
     left:calc(50% - 60px);
-    top:10px;
+    top:70px;
     width:120px;
     height:30px;
     border:none;

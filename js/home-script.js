@@ -17,7 +17,7 @@ $(function(){
             div.innerHTML="<span class='g-left'><img src='"+items[i].picture+"' alt='没有相关图片'></span>" +
                 "<span class='g-right'><span class='icon'></span><span class='content'>" +
                 "<div class='title'>"+items[i].title+"</div><div class='name'>名称："+items[i].name+"</div>" +
-                "<div class='time'>时间："+items[i].time+"</div><div class='character'></div></span></span>"
+                "<div class='time'>时间："+items[i].time+"</div><div class='character'></div></span></span>";
             var kharacter=items[i].kharacter.split("、");
             if(!kharacter[0]){
                 $(div).find(".character").html("特征：<br/>无");

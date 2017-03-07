@@ -2,18 +2,54 @@
 
 ### 2017.03.07 Tue.
 
+>#### news.html增加页面初始化、找回、删除、留言红点
+>该页面前端向后台传送数据较简单，以命令形式
+>>###### 传给后台
+>>初始化命令
+
+    signal:"all"
+
+>>找回命令
+
+    signal:"found",
+    pid:items[i].pid
+
+>>删除命令
+
+    signal:"delete",
+    pid:items[i].pid
+
+>>留言命令
+
+    signal:"anyMessage"
+
+>>具体命令内容后期与后台协商，pid需要从后台读取到
+>
+>>###### 传给前端
+>>初始化和删除：  
+将获取到的所有信息合并成字符串：  
+pid,title,name,time,character,picture,type;  
+不同信息以;隔开，不同属性以,隔开,character保有原有的中文顿号。  
+比之前多了首项pid和尾项type（type为lost或found）。
+>>
+>>找回：  
+将要跳转，不清楚后台原理，具体实现当面交接  
+>>
+>>留言红点：  
+需要后台判断用户是否有新的未读消息，有返回"yes",没有返回"no"
+
 >#### home.html完成搜索功能
 >
 >数据格式更改如下：
 >
 >>###### 传给后台
 >>
-    `data:{
+    data:{
         type:type,
         search:search,
         index:$("#screen-"+type).find(">.item").length,
         amount:amount
-    }`
+    }
 >
 >>**search:**
 搜索框中的内容
@@ -26,11 +62,11 @@
 >
 >>###### 传给后台
 >>
-    `data:{
+    data:{
         type:type,
         index:$("#screen-"+type).find(">.item").length,
         amount:amount
-    }`
+    }
 >>    
 >>**index:**
 当前已有数目
@@ -57,7 +93,7 @@ title,name,time,character,picture;title,name,time,character,picture;
 >
 >>###### 传给后台
 >>
-    `data:{
+    data:{
         type:$("[name='type']:checked").val(),
         title:$("[name='title']").val(),
         name:$("[name='name']").val(),
@@ -69,7 +105,7 @@ title,name,time,character,picture;title,name,time,character,picture;
         message:$("[name='message']").val(),
         picture:$("[name='picture']").val(),
         owner:$("[name='type']:checked").val()=="lost"?"2":"1"
-    }`  
+    }  
 >>
 >>**picture:**
 文件上传还需尝试  
