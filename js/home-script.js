@@ -1,6 +1,7 @@
 $(function(){
     // Module
-    var screenType="lost";
+    var screenType="lost",
+        search=$("#m-search-text").val();
     var Item=function(str){
         var arr=str.split(",");
         this.title=arr[0];
@@ -40,6 +41,7 @@ $(function(){
             contentType:"application/x-www-form-urlencoded;charset=utf-8",
             data:{
                 type:type,
+                search:search,
                 index:$("#screen-"+type).find(">.item").length,
                 amount:amount
             },
@@ -79,7 +81,20 @@ $(function(){
     Module.SuspendedMenuButton.addEventListener(2,function(){
         location.href="../html/message.html";
     });
-    Module.SearchBox.unit();
+    Module.SearchBox.unit(function(){
+        var text=$("#m-search-text").val();
+        var regNoSpace=/^\S+$/;
+        if(regNoSpace.test(text)){
+            $(".circle").click();
+            $("#screen-found").empty();
+            $("#screen-lost").empty();
+            search=$("#m-search-text").val();
+            init(screenType,10);
+        }
+        else{
+            alert("不能有空格哦~");
+        }
+    });
     // Other
     $("#screen-lost").find(">.item").on("click",function(){
         location.href="../html/lost.html";
