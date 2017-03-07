@@ -32,17 +32,11 @@ $(function(global){
             }
         }());
         var searchBox=(function(){
-            var unit=function(){
+            var unit=function(func){
                 $("#m-search-switch").on("click",function(){
                     $("#m-search-switch").addClass("m-search-switch-on");
                 });
-                $("#m-search-btn").on("click",function(){
-                    var text=$("#m-search-text").val();
-                    var regNoSpace=/^\S+$/;
-                    if(regNoSpace.test(text)){
-                        $("#m-search").find("form").submit();
-                    }
-                })
+                $("#m-search-btn").on("click",func)
             };
             return{
                 unit:unit

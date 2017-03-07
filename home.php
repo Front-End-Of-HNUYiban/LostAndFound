@@ -1,8 +1,9 @@
 <?php
 	if($con=new mysqli("localhost","root","lzm8974106","lostandfound")){
 		$con->query("set names utf8");
+		$add=$_POST["search"]==""?"":" where title='".$_POST["search"]."'";
 		if($type=$_POST["type"]){
-			if($res=$con->query("select title,name,time,kharacter,picture from ".$type)){
+			if($res=$con->query("select title,name,time,kharacter,picture from ".$type.$add)){
 				$index=1;
 				$result="";
 				while($r=$res->fetch_assoc()){
