@@ -25,8 +25,9 @@ $(function(global){
                     if(!container.hasClass("f-warning-hidden")){
                         container.addClass("f-warning-hidden");
                         $.ajax({
-                            url:"../index.php",
+                            url:"../publish.php",
                             type:"post",
+                            contentType:"application/x-www-form-urlencoded;charset=utf-8",
                             data:{
                                 type:$("[name='type']:checked").val(),
                                 title:$("[name='title']").val(),
@@ -37,8 +38,7 @@ $(function(global){
                                 character:$("[name='character']").val(),
                                 contact:$("[name='contact']").val(),
                                 message:$("[name='message']").val(),
-                                picture:$("[name='picture']").val(),
-                                owner:$("[name='type']:checked").val()=="lost"?"2":"1"
+                                picture:$("[name='picture']").val()
                             },
                             success:function(msg){
                                 var cover=$(".m-cover");

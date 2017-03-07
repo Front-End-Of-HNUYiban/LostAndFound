@@ -6,7 +6,6 @@
 .g-main{
     position:relative;
     width:100%;
-    padding:5px 0;
     background-color:#f4f4f4;
 }
 .m-slide>.screen>.item{
@@ -18,19 +17,19 @@
 }
 .m-slide>.screen>.item>.g-left{
     position:relative;
-    width:50%;
+    width:150px;
     height:100%;
 }
 .m-slide>.screen>.item>.g-left>img{
     position:absolute;
-    top:10%;
+    top:7.5%;
     left:10%;
-    width:80%;
-    height:80%;
+    width:85%;
+    height:85%;
 }
 .m-slide>.screen>.item>.g-right{
     position:relative;
-    width:50%;
+    width:calc(100% - 150px);
     height:100%;
     vertical-align:top;
 }
@@ -50,12 +49,12 @@
 }
 .m-slide>.screen>.item>.g-right>.content{
     position:relative;
-    top:8%;
+    top:10px;
     margin-left:3px;
     vertical-align:top;
 }
 .m-slide>.screen>.item>.g-right>.content>*{
-    padding-bottom:10px;
+    padding-bottom:8px;
 }
 .m-slide>.screen>.item>.g-right>.content>.title{
     color:#363636;
