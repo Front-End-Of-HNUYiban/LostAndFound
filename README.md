@@ -25,8 +25,6 @@
 title,name,time,character,picture;title,name,time,character,picture;
 不同信息以;隔开，不同属性以,隔开,character保有原有的中文顿号
 
----
-
 #### publish.html删除owner的传送
 
 后台直接从应用里调取用户id
