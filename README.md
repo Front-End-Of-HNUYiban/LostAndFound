@@ -8,6 +8,8 @@
 >
 >>###### 传给后台
 >
+<<<<<<< HEAD
+=======
     `data:{
         type:type,
         search:search,
@@ -26,11 +28,33 @@
 >
 >>###### 传给后台
 >>
+>>>>>>> readme
+    `data:{
+        type:type,
+        search:search,
+        index:$("#screen-"+type).find(">.item").length,
+        amount:amount
+    }`
+<<<<<<< HEAD
+>
+>>**search:**
+搜索框中的内容
+>>
+>>在页面初始化时，search将会传空值到后台
+
+>#### home.html增加页面初始ajax与滚动ajax，还有搜索未添加
+>
+>具体数据格式如下:
+>
+>>###### 传给后台
+>>
     `data:{
         type:type,
         index:$("#screen-"+type).find(">.item").length,
         amount:amount
     }`
+=======
+>>>>>>> readme
 >>    
 >>**index:**
 当前已有数目
@@ -57,6 +81,19 @@
 title,name,time,character,picture;title,name,time,character,picture;
 不同信息以;隔开，不同属性以,隔开,character保有原有的中文顿号
 
+---
+
+<<<<<<< HEAD
+后台直接从应用里调取用户id
+>>>>>>> 7e99af34244f27f187c4874208f81ff4b73fc355
+=======
+---
+>>>>>>> readme
+
+---
+
+<<<<<<< HEAD
+=======
 #### publish.html删除owner的传送
 
 后台直接从应用里调取用户id
@@ -64,6 +101,7 @@ title,name,time,character,picture;title,name,time,character,picture;
 
 ***
 
+>>>>>>> readme
 ### 2017.03.06 Mon.
 
 >#### publish.html实现与后台传输数据  
@@ -102,5 +140,9 @@ title,name,time,character,picture;title,name,time,character,picture;
 
 >传给前端
 
+<<<<<<< HEAD
 成功传"success",失败传"error"
 >>>>>>> 7e99af34244f27f187c4874208f81ff4b73fc355
+=======
+成功传"success",失败传"error">>>>>>> 7e99af34244f27f187c4874208f81ff4b73fc355
+>>>>>>> readme

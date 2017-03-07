@@ -57,8 +57,13 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
+<<<<<<< HEAD
               <first_editor relative-caret-position="540">
                 <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+=======
+              <first_editor relative-caret-position="891">
+                <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+>>>>>>> readme
                 <folding />
               </first_editor>
               <second_editor />
@@ -333,12 +338,20 @@
       <option name="presentableId" value="Default" />
       <updated>1488796479785</updated>
       <workItem from="1488796482763" duration="12144000" />
+<<<<<<< HEAD
       <workItem from="1488851302544" duration="14070000" />
+=======
+      <workItem from="1488851302544" duration="14247000" />
+>>>>>>> readme
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="26214000" />
+=======
+    <option name="totallyTimeSpent" value="26391000" />
+>>>>>>> readme
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -561,8 +574,13 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
+<<<<<<< HEAD
           <first_editor relative-caret-position="540">
             <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+=======
+          <first_editor relative-caret-position="891">
+            <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+>>>>>>> readme
             <folding />
           </first_editor>
           <second_editor />
