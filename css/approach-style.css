@@ -101,7 +101,7 @@
     height:60px;
 }
 .g-main>form>div>input:checked+label{
-    background-color:#f2f2f2;
+    background-color:#e0e0e0;
 }
 .g-main>form>div>label>img{
     position:relative;

@@ -6,4 +6,5 @@ $(function(){
     $("#btn-back").on("click",function(){
         location.href="../html/home.html";
     });
+    
 });

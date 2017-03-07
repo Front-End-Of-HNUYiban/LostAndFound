@@ -22,10 +22,8 @@ $(function(global){
             }
         }());
         var suspendedBackButton=(function(){
-            var unit=function(){
-                $(".m-susbtn-2").on("click",function(){
-                    history.back();
-                });
+            var unit=function(func){
+                $(".m-susbtn-2").on("click",func);
             };
             return{
                 unit:unit

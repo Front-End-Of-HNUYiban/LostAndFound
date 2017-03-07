@@ -96,7 +96,13 @@
     top:calc(10% + 4px);
     width:30px;
     height:85%;
+}
+.g-main>.lost-item>.g-right>.icon{
     background:url(../img/icons2.png) -30px 0 no-repeat;
+    background-size:auto 11px;
+}
+.g-main>.found-item>.g-right>.icon{
+    background:url(../img/icons2.png) 0 0 no-repeat;
     background-size:auto 11px;
 }
 .g-main>.item>.g-right>.content{
