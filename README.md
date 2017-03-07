@@ -7,9 +7,7 @@
 >数据格式更改如下：
 >
 >>###### 传给后台
->
-<<<<<<< HEAD
-=======
+>>
     `data:{
         type:type,
         search:search,
@@ -28,15 +26,14 @@
 >
 >>###### 传给后台
 >>
->>>>>>> readme
+>>
     `data:{
         type:type,
         search:search,
         index:$("#screen-"+type).find(">.item").length,
         amount:amount
     }`
-<<<<<<< HEAD
->
+>>
 >>**search:**
 搜索框中的内容
 >>
@@ -53,55 +50,24 @@
         index:$("#screen-"+type).find(">.item").length,
         amount:amount
     }`
-=======
->>>>>>> readme
 >>    
 >>**index:**
 当前已有数目
 >>
 >>**amount:**
 向服务器请求数目
-<<<<<<< HEAD
 >
 >>###### 传给前端
->>
->>将获取到的所有信息合并成字符串：
->>
->>title,name,time,character,picture;title,name,time,character,picture;  
-不同信息以;隔开，不同属性以,隔开,character保有原有的中文顿号。
+>>将获取到的所有信息合并成字符串：  
+title,name,time,character,picture;title,name,time,character,picture;  
+不同信息以;隔开，不同属性以,隔开,character保有原有的中文顿号
 
 >#### publish.html删除owner的传送
 >
 >后台直接从应用里调取用户id
-=======
-
->传给前端
-
-将获取到的所有信息合并成字符串：
-title,name,time,character,picture;title,name,time,character,picture;
-不同信息以;隔开，不同属性以,隔开,character保有原有的中文顿号
-
----
-
-<<<<<<< HEAD
-后台直接从应用里调取用户id
->>>>>>> 7e99af34244f27f187c4874208f81ff4b73fc355
-=======
----
->>>>>>> readme
-
----
-
-<<<<<<< HEAD
-=======
-#### publish.html删除owner的传送
-
-后台直接从应用里调取用户id
->>>>>>> 7e99af34244f27f187c4874208f81ff4b73fc355
 
 ***
 
->>>>>>> readme
 ### 2017.03.06 Mon.
 
 >#### publish.html实现与后台传输数据  
@@ -126,23 +92,9 @@ title,name,time,character,picture;title,name,time,character,picture;
 >>
 >>**picture:**
 文件上传还需尝试  
-<<<<<<< HEAD
 >>
 >>**owner:**
 假使为用户表中用户对应id，实际运用中由后台决定是否需要传这个数据。
 >
 >>###### 传给前端
->>
 >>成功传"success",失败传"error"
-=======
-**owner:**
-假使为用户表中用户对应id，实际运用中由后台决定是否需要传这个数据
-
->传给前端
-
-<<<<<<< HEAD
-成功传"success",失败传"error"
->>>>>>> 7e99af34244f27f187c4874208f81ff4b73fc355
-=======
-成功传"success",失败传"error">>>>>>> 7e99af34244f27f187c4874208f81ff4b73fc355
->>>>>>> readme
