@@ -26,25 +26,6 @@
 >
 >>###### 传给后台
 >>
->>
-    `data:{
-        type:type,
-        search:search,
-        index:$("#screen-"+type).find(">.item").length,
-        amount:amount
-    }`
->>
->>**search:**
-搜索框中的内容
->>
->>在页面初始化时，search将会传空值到后台
-
->#### home.html增加页面初始ajax与滚动ajax，还有搜索未添加
->
->具体数据格式如下:
->
->>###### 传给后台
->>
     `data:{
         type:type,
         index:$("#screen-"+type).find(">.item").length,
