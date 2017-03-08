@@ -2,6 +2,23 @@
 
 ### 2017.03.08 Wed.
 
+>#### 初步告一段落，具体细节需要与后台当面交接
+
+>#### message.html增加页面初始化
+>形式同news.html
+>>###### 传给后台
+>>初始化命令
+
+    signal:"all"
+    
+>
+>>###### 传给前端
+>>将获取到的所有信息合并成字符串：  
+user,title,name,time,character,picture,type;  
+不同信息以;隔开，不同属性以,隔开,character保有原有的中文顿号。  
+首项更改为user，表示找到失物或者招领失物的人名  
+尾项type（type为lost或found）
+
 >#### approach.html增加留言红点
 >形式同news.html
 >>###### 传给后台

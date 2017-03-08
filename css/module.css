@@ -355,19 +355,20 @@
 }
 /*消息按钮*/
 .m-message-btn{
-    width:36px;
-    height:22px;
-    background:url(../img/icons2.png) -120px 0 no-repeat;
-    background-size:auto;
+    position:relative;
+    width:26px;
+    height:16px;
+    background:url(../img/message.png) 0 0 no-repeat;
+    background-size:26px 16px;
 }
 .m-message-btn>.dot{
     visibility:visible;
     position:absolute;
-    top:-4px;
-    right:-4px;
-    width:10px;
-    height:10px;
-    border-radius:5px;
+    top:-3px;
+    right:-3px;
+    width:8px;
+    height:8px;
+    border-radius:4px;
     background-color:#ff6666;
 }
 .m-message-btn>.dot-hidden{
