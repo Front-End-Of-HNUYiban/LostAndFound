@@ -122,13 +122,13 @@
 }
 .g-foot{
     position:relative;
-    height:50px;
+    height:70px;
     width:100%;
 }
 .g-foot>.btn{
     position:relative;
     left:calc(50% - 60px);
-    top:10px;
+    top:30px;
     width:120px;
     height:30px;
     border:none;
